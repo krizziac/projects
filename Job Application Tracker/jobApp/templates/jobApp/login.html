@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Login</title>
+    {% load static %}
+    <link rel="stylesheet" href= "{% static 'css/list.css' %}">
+</head>
+
+<h1>Login</h1>
+<body>
+    <div class = "login">
+        <form method ="POST" action="">
+            {% csrf_token %}
+            {{form.as_p}}
+            <input  class = "loginButton" type ="submit" value ="Login">
+        </form>
+    </div>
+
+</body>
+
+</html>

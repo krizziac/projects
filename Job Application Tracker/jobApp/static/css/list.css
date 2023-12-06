@@ -1,0 +1,172 @@
+body{
+    background-color:	#EADDCA;
+
+}
+
+h1{
+    color:#615757;
+    letter-spacing: 0.2em;
+    font-size: 25pt;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    text-align:center ;
+    
+}
+
+.header{
+    color:#615757;
+    font-size: 15pt;
+    text-transform: uppercase;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 10pt;
+}
+
+.companyName{
+    color:#000000;
+    font-size: 20pt;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.jobTitle,.progress{
+    color:#000000;
+    font-size: 15pt;
+    letter-spacing: 0.1em;
+    font-weight: normal;
+    margin-top: -15pt;
+    text-transform: lowercase;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.job{
+    background-color:#b8b8c5;
+    inline-size: 500px;
+    border-radius: 15px;
+    padding: 0px 0px 0px 15px;
+    padding-bottom: 10pt;
+    margin-bottom: 10pt;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.inlineTitle{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    overflow-inline: clip ;
+}
+
+.delete a:active { text-decoration: none; }
+
+
+.delete a:link{
+    padding-right: 20pt;
+    color: #615757;
+    font-size: 15pt;
+
+    text-decoration: none;
+
+}
+.inlineEdit{
+    display: flex;
+    align-items:center;
+    margin-top: -15pt;
+    justify-content: space-between;
+}
+
+.inlineEdit a:link {
+    padding-right: 20pt;
+    font-size: 15pt;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+}
+
+.inlineEdit a:hover{
+    padding-right: 20pt;
+    color: #867072;
+    font-size: 15pt;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+}
+
+
+.login{
+    background-color:#b8b8c5a3;
+    inline-size: 500px;
+    height: 150px;
+    border-radius: 15px;
+    padding: 0px 0px 0px 15px;
+    padding-bottom: 10pt;
+    margin-bottom: 10pt;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+input[type=text],
+input[type=password],
+textarea {
+    border: 1px solid #785757;
+    border-radius: 5px;
+    padding: 10px;
+    width: 90%;
+ }
+
+ .loginButton {
+    border: 1px solid #644d36 ;
+    background-color: #d4a0a0;
+    color: #493420;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    float: right;
+    margin-right: 15px;
+    font-size: 15px;
+}
+.logoutButton {
+    border: 1px solid #644d36 ;
+    background-color: #d4a0a0;
+    color: #493420;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    float: right;
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+
+.addNew{
+    border: 1px solid #644d36 ;
+    background-color: #d4a0a0;
+    color: #493420;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    float: right;
+    margin-right: 15px;
+    font-size: 15px;
+    margin-left: 20px;
+    
+
+
+}
+
+.topBar{
+    display: flex;
+    align-items:center;
+    margin-top: -15pt;
+    justify-content:center;
+    margin-left: 65pt;
+}
+
+.formDetail{
+    font-size: 15px;
+    letter-spacing: 0em;
+}
+
+
+

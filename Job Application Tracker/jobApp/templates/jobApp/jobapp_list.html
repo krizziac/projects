@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<div class="header-bar"> 
+{% if request.user.is_authenticated %}
+    <a class = "logoutButton" href="{% url 'logout' %}">Logout</a> {% else %}
+    <a href="{% url 'login' %}">Login</a> {% endif %}  
+</div>
+
+<head>
+    <title> Job Application</title>
+    {% load static %}
+    <link rel="stylesheet" href= "{% static 'css/list.css' %}">
+</head>
+
+
+<body>
+    <div class=  "topBar">
+        <h1> My Job Applications </h1>
+        <a class = "addNew" href = "{% url 'addJobApp' %}"> &#43;</a>
+    </div>
+    
+    <table>
+        {% for job in object_list %}
+        <div class = "job">
+            <div class = "inlineTitle">
+                <h3 class = "companyName">{{job.companyName}}</h3>
+                <h3 class= "delete"><a href = "{% url 'deleteJobApp' job.id %}">&#215; </a></h3>
+            </div>
+            <h3 class = "jobTitle">role: {{job.jobTitle}}</h3>
+            <div class = "inlineEdit">
+                <h3 class = "progress">Application Status: {{job.appProgress}}</h3>
+                <h3 class = "editLink"><a href = "{% url 'editJobApp' job.id %}">Edit</a></h3>
+            </div>
+        </div>
+        {% empty %}
+        <h3> no Items in List</h3>
+        {% endfor %}
+    </table>
+</body>
+</html>

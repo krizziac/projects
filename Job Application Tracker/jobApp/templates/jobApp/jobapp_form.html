@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Edit/Add</title>
+    {% load static %}
+    <link rel="stylesheet" href= "{% static 'css/list.css' %}">
+</head>
+
+<h1> Edit/Add Application<h1>
+
+<form method ="POST" action="">
+    {% csrf_token %}
+    <div class = "formCard">
+        <h3 class = "formDetail">Company Name: {{form.companyName}} </h3>
+        <h3 class = "formDetail">Job Title {{form.jobTitle}} </h3>
+        <h3 class = "formDetail">Status:{{form.appProgress}} </h3>
+        <h3 class = "formDetail">Additional Notes: {{form.interviewPrep}} </h3>
+        <input type ="submit" value ="Submit">
+
+    </div>
+
+</form>
+</html>
