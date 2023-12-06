@@ -1,0 +1,79 @@
+body{
+background-image: url("images/pinkglitter.jpeg");
+font-family: cursive,"Comic Sans MS", "Comic Sans";
+color:  #78ff5a;
+font-size: 20pt;
+}
+
+h1{
+    font-family: cursive;
+    text-align: center;
+    color:  #f10081;
+    text-shadow: 2px 12px 1px rgb(51, 44, 255);
+    margin-left: 300pt;
+    font-size: 550%;
+}
+h2{
+    font-family:cursive,"Comic Sans MS", "Comic Sans";
+    color: rgb(234, 255, 42);
+}
+h3{
+    color:rgb(0, 255, 26);
+}
+h4{
+    font-family:cursive,"Comic Sans MS", "Comic Sans";
+    color: #f10081;
+}
+h5{
+    font-size: 15pt;
+    font-family:cursive,"Comic Sans MS", "Comic Sans";
+    color:rgb(140, 0, 255);
+}
+
+.aboutMeText{
+    font-size: 15pt;
+}
+.backend{
+    font-size:15pt
+}
+.job-experience{
+    font-size: 15;
+}
+.info{
+    padding-left: 5%;
+}
+img{
+    width: 150pt;
+    height:200pt;
+    padding-left: 25%;
+    transform:rotate(1210deg);
+}
+img:hover{
+    transform: rotate(360deg) scale(2);
+    transition: all 1s;
+  
+}
+
+.topbar{
+    background-color: rgb(18, 253, 14);
+    height: 350pt;
+    width: 300pt;
+    position: absolute;    
+}
+.topbar a{
+  padding: 3pt 25pt;
+  text-decoration: none;
+  font-size: 17pt;
+  color: #ffe552;
+  display: block;
+
+}
+.topbar a:hover{
+    background-color: #f10081;
+}
+.sub-backend{
+    padding-left: 2%;
+}
+
+
+

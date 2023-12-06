@@ -1,0 +1,116 @@
+body{
+    background-color:#eddddd ;
+
+}
+
+.mainTitle{
+    font-size:40pt;
+    text-align: center;
+    padding-right: 35pt;
+    color:#615757;
+}
+
+h2{
+    color:#615757;
+    letter-spacing: 0.2em;
+    font-size: 25pt;
+    text-transform: uppercase;
+    
+}
+h3{
+    font-size:20pt;
+    font-weight:normal ;
+}
+h4{
+    font-size: 20pt;
+    color:#615757;
+   
+}
+h5{
+    font-size: 20pt;
+    font-weight:normal ;
+    margin-top: -10pt;
+}
+body{
+    font-family: optima,sans-serif;
+
+}
+.aboutMe{
+    padding-left: 7%;
+}
+
+.skills{
+    padding-left: 7%;
+}
+
+img{
+    width: 150pt;
+    height: 200pt;
+    padding-left:12%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+img:hover{
+    transform: rotate(360deg);
+    transition: all 3s;
+  
+}
+.topbar{
+    background-color: rgb(240, 215, 183);
+    height: 350pt;
+    width: 200pt;
+    position: fixed;
+
+    
+}
+.topbar a{
+  padding: 3pt 25pt;
+  text-decoration: none;
+  font-size: 17pt;
+  color: #6f6a6a;
+  display: block;
+
+
+}
+.topbar a:hover{
+    color: #6a82d6;
+}
+.topbarContainer{
+    padding-left: 2.5%;
+}
+ul{
+    list-style-type: circle;
+}
+.container-contact{
+    margin-top: -10pt;
+}
+.aboutMeText{
+    margin-top: -10pt;
+}
+.sub-backend{
+    margin-top: -10pt;
+}
+.backend{
+    margin-top: -10pt;
+}
+.backend-lang{
+    padding-left: 10pt ;
+}
+.backend-tools{
+    padding-left: 10pt;
+    margin-top: -15pt;
+}
+.tools{
+    margin-top: -15pt;
+}
+.job-experience{
+    margin-top: -15pt;
+}
+.info{
+    padding-left: 10pt;
+    padding-top: 0pt;
+}
+
+.everything{
+    margin-left: 200pt;
+}
