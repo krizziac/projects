@@ -1,4 +1,5 @@
-ABOUT
+About
+===============
 
 For a school project aimed at refining my CSS-HTML skills, I undertook the challenge of creating two versions of a portfolio: one with a 'bad' design and another with a 'good' design.
 
