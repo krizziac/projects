@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ingredientViewText" parent="textBody">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="ingredientViewButton" parent="textButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="addChoiceButton" parent="textButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:background">@color/background</item>
+        <item name="android:hint">@string/add_ingredient</item>
+    </style>
+
+    <style name="inputField" parent="textBody">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:textColorHint">@color/primary_dark</item>
+        <item name="android:background">@color/background_dark</item>
+    </style>
+</resources>

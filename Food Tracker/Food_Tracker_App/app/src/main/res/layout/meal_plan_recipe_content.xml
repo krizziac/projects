@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:orientation="horizontal"
+    cardView:cardBackgroundColor="@color/background_light"
+    cardView:cardCornerRadius="20dp"
+    cardView:contentPadding="16dp">
+
+    <RelativeLayout
+        android:id="@+id/meal_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/mealPlanRecipeTitle"
+            style="@style/ingredientViewText"
+            android:text="@string/recipe_name"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/deleteMealPlanRecipe"
+            android:layout_width="35dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/mealPlanRecipeTitle"
+            android:background="@android:color/transparent"
+            app:tint="@color/primary_light"
+            cardView:srcCompat="@drawable/ic_close_fill0_wght400_grad0_opsz48" />
+
+        <TextView
+            android:id="@+id/mealPlanRecipeCategory"
+            style="@style/ingredientViewText"
+            android:layout_below="@id/mealPlanRecipeTitle"
+            android:text="@string/recipe_category" />
+
+        <TextView
+            android:id="@+id/mealPlanRecipeServings"
+            style="@style/ingredientViewText"
+            android:layout_below="@id/mealPlanRecipeCategory"
+            android:text="@string/recipe_servings" />
+
+        <TextView
+            android:id="@+id/mealPlanRecipePrepTime"
+            style="@style/ingredientViewText"
+            android:layout_below="@id/mealPlanRecipeServings"
+            android:text="@string/recipe_preptime" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

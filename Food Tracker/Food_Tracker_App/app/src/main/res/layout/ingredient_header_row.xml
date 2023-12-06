@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ingredientHeaders"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_dark"
+    android:orientation="horizontal"
+    android:paddingHorizontal="8dp"
+    android:paddingVertical="16dp"
+    android:weightSum="4"
+    app:layout_constraintBottom_toTopOf="@id/recipeDisplayIngredientList"
+    app:layout_constraintTop_toBottomOf="@id/recipeDisplayIngredientsHeader">
+
+    <TextView
+        android:id="@+id/recipeDisplayDescriptionHeader"
+        style="@style/textBody"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.4"
+        android:text="@string/description"
+        android:textColor="@color/background_light"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/recipeDisplayAmountHeader"
+        style="@style/textBody"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:text="@string/amount"
+        android:textColor="@color/background_light"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/recipeDisplayUnitHeader"
+        style="@style/textBody"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:text="@string/unit"
+        android:textColor="@color/background_light"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/recipeDisplayCategoryHeader"
+        style="@style/textBody"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/category"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/background_light"
+        android:textStyle="bold" />
+</LinearLayout>

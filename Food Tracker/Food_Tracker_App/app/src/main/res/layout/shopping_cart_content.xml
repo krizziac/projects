@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/shopping_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primary"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/shopping_category_name"
+        style="@style/textHeader2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="@string/category"
+        android:textColor="@color/background_light"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:contentDescription="@string/group_arrow"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:src="@drawable/ic_baseline_arrow_drop_down_24"
+        app:tint="@color/white" />
+</LinearLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    cardView:cardBackgroundColor="@color/background_light"
+    cardView:cardCornerRadius="20dp"
+    cardView:contentPadding="16dp">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ingredient_name_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <TextView
+                android:id="@+id/ingredient_name"
+                style="@style/ingredientViewText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/missing_fields_warning"
+                style="@style/ingredientViewText"
+                android:layout_marginEnd="8dp"
+                android:textSize="12sp"
+                android:text="@string/missing_fields" />
+
+            <ImageView
+                android:id="@+id/ingredient_warning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/warning_icon_notifying_missing_information_on_the_ingredient"
+                android:src="@drawable/ic_baseline_warning_24"
+                cardView:tint="@color/secondary_dark" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/category_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ingredient_name_row"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ingredientViewText"
+                android:layout_marginEnd="8dp"
+                android:text="@string/category"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_ingredient_category"
+                style="@style/ingredientViewText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/location_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/category_row"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ingredientViewText"
+                android:layout_marginEnd="8dp"
+                android:text="@string/location"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_ingredient_location"
+                style="@style/ingredientViewText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/expiry_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location_row"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ingredientViewText"
+                android:layout_marginEnd="8dp"
+                android:text="@string/expiry_date"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_ingredient_expiry"
+                style="@style/ingredientViewText" />
+        </LinearLayout>
+
+        <!-- Expandable content -->
+        <RelativeLayout
+            android:id="@+id/expand_ingredient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/expiry_row"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ingredient_amount_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ingredientViewText"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/amount"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_ingredient_amount"
+                    style="@style/ingredientViewText" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/delete_ingredient"
+                style="@style/ingredientViewButton"
+                android:layout_below="@+id/ingredient_amount_row"
+                android:backgroundTint="@color/negative"
+                android:text="@string/delete_button" />
+
+            <Button
+                android:id="@+id/edit_ingredient"
+                style="@style/ingredientViewButton"
+                android:layout_below="@+id/ingredient_amount_row"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="@color/positive"
+                android:text="@string/edit_button" />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

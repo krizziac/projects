@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/createMealPlan"
+        style="@style/addChoiceButton"
+        android:textColor="@color/background_light"
+        android:text = "Create/Reset Meal Plan" />
+
+    <Button
+        android:id="@+id/addMealIngredient"
+        style="@style/addChoiceButton"
+        android:textColor="@color/background_light"
+        android:text="Add Meal Plan Day" />
+
+
+</LinearLayout>

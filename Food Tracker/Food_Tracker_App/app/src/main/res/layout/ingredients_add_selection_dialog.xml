@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/addIngredientSelectionButton"
+        style="@style/addChoiceButton"
+        android:text="@string/add_ingredient" />
+
+    <Button
+        android:id="@+id/addIngredientLocationSelectionButton"
+        style="@style/addChoiceButton"
+        android:text="@string/add_ingredient_location" />
+
+    <Button
+        android:id="@+id/addIngredientCategorySelectionButton"
+        style="@style/addChoiceButton"
+        android:text="@string/add_ingredient_category" />
+</LinearLayout>

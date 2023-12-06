@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/navigation_bar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primary_light"
+    android:paddingVertical="8dp">
+
+    <!-- TODO: different content descriptions and extract to styles -->
+
+    <ImageButton
+        android:id="@+id/navigation_ingredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/menu_nav_bar_item"
+        android:src="@drawable/ic_egg_alt"
+        android:textColor="@color/background_light"
+        android:title="@string/title_ingredients" />
+
+    <ImageButton
+        android:id="@+id/navigation_shopping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/menu_nav_bar_item"
+        android:src="@drawable/ic_shopping_cart"
+        android:textColor="@color/background_light"
+        android:title="@string/title_shopping" />
+
+    <ImageButton
+        android:id="@+id/navigation_recipes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/menu_nav_bar_item"
+        android:src="@drawable/ic_menu_book"
+        android:textColor="@color/background_light"
+        android:title="@string/title_recipes" />
+
+    <ImageButton
+        android:id="@+id/navigation_meal_plan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/menu_nav_bar_item"
+        android:src="@drawable/ic_restaurant_menu"
+        android:textColor="@color/background_light"
+        android:title="@string/title_meal_plan" />
+
+</LinearLayout>

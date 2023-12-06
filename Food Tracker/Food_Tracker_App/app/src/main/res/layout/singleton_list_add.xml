@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/singleton_list_add"
+        style="@style/textBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:autofillHints="none"
+        android:background="@color/background_dark"
+        android:hint="@string/singleton_list_add"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textColorHint="@color/primary_dark" />
+
+</LinearLayout>

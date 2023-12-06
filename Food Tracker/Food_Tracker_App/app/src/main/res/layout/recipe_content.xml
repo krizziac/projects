@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    cardView:cardBackgroundColor="@color/background_light"
+    cardView:cardCornerRadius="20dp"
+    cardView:contentPadding="16dp">
+
+    <RelativeLayout
+        android:id="@+id/recipe_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/recipe_name"
+            style="@style/ingredientViewText"
+            android:text="@string/recipe_name"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/prep_time_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recipe_name"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ingredientViewText"
+                android:text="@string/recipe_preptime"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/text_recipe_preptime"
+                style="@style/ingredientViewText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/servings_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/prep_time_row"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ingredientViewText"
+                android:text="@string/recipe_servings"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/text_recipe_servings"
+                style="@style/ingredientViewText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/category_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/servings_row"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ingredientViewText"
+                android:text="@string/category"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/recipe_ingredient_category"
+                style="@style/ingredientViewText" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:orientation="horizontal"
+    cardView:cardBackgroundColor="@color/background_light"
+    cardView:cardCornerRadius="20dp"
+    cardView:contentPadding="16dp">
+
+
+    <RelativeLayout
+        android:id="@+id/meal_relative_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/mealPlanIngredientName"
+            style="@style/ingredientViewText"
+            android:text="@string/name"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/deleteMealPlanIngredient"
+            android:layout_width="35dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/mealPlanIngredientName"
+            android:background="@android:color/transparent"
+            app:tint="@color/primary_light"
+            cardView:srcCompat="@drawable/ic_close_fill0_wght400_grad0_opsz48" />
+
+        <TextView
+            android:id="@+id/mealPlanIngredientCategory"
+            style="@style/ingredientViewText"
+            android:layout_below="@id/mealPlanIngredientName"
+            android:text="@string/category" />
+
+        <TextView
+            android:id="@+id/mealPlanIngredientAmount"
+            style="@style/ingredientViewText"
+            android:layout_below="@id/mealPlanIngredientCategory"
+            android:text="@string/amount" />
+
+        <TextView
+            android:id="@+id/mealPlanIngredientUnit"
+            style="@style/ingredientViewText"
+            android:layout_below="@id/mealPlanIngredientCategory"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/mealPlanIngredientAmount"
+            android:text="@string/unit" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
